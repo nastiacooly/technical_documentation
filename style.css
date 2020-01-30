@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Inconsolata|Quicksand&display=swap');
+
+/**general styles**/
+
+body {
+  background-color: white;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  border-right: solid;
+  border-color: hsla(50, 100%, 50%, 0.7);
+  }
+  
+#navbar ol {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+  
+.nav-list li {
+  padding: 5px 2px;
+  border-top: 1px solid hsla(50, 100%, 50%, 0.7);
+  list-style: none; 
+  }
+  
+.nav-link {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: 'Baskervville', serif;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+  }
+
+#main-doc {
+  width: 75vw;
+  margin-left: 20vw;
+}
+
+.header {
+  color: black;
+  font-family: 'Baskervville', serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: hsla(50, 100%, 50%, 0.7);
+  padding: 3px 0 3px 3px;
+}
+
+.subheader {
+  color: black;
+  font-weight: normal;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: hsla(50, 100%, 50%, 0.3);
+  padding: 3px 0 3px 3px;
+}
+
+.paragraph {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  margin: 10px 0 10px 10px;
+}
+
+.section-list {
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+#list-one {
+  font-weight: bold;
+}
+
+.list-paragraph {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.code-box {
+  background-color: #eaeaea;
+  border-radius: 3px;
+  margin-left: 30px;
+  padding: 10px;
+  width: 30vw;
+}
+
+.code {
+  font-family: 'Inconsolata', monospace;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 800px) {
+  /** for mobile screens**/
+  #navbar {
+    position: absolute;
+    top: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 70vw;
+    height: 30vh;
+    max-height: 150px;
+    border: none;
+    z-index: 1;
+  }
+  
+  #navbar .header {
+    text-align: center;
+  }
+  
+  .nav-link {
+    font-size: 15px;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+    margin-top: 200px;
+    width: 100%;
+  }
+  
+  .code-box {
+    width: 60%;
+    padding: 5px;
+  }
+  
+  .code {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /** for small screens **/
+  .nav-link {
+    font-size: 10px;
+  }
+  
+  .header,
+  .subheader {
+    font-size: 10px;
+  }
+  
+  .paragraph,
+  .section-list {
+    font-size: 8px;
+  }
+  
+  .code-box {
+    width: 50%;
+  }
+}
